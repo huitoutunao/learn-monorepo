@@ -1,0 +1,30 @@
+{
+  "name": "@learn-monorepo/build",
+  "version": "0.1.0",
+  "description": "learn monorepo",
+  "author": "huitoutunao",
+  "private": true,
+  "main": "./dist/learn-monorepo-build.mjs",
+  "module": "./dist/learn-monorepo-build.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/learn-monorepo-build.umd.js",
+      "module": "./dist/learn-monorepo-build.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  }
+}
