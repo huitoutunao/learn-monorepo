@@ -1,0 +1,14 @@
+{
+  "name": "@learn-monorepo/demo",
+  "version": "0.1.0",
+  "description": "learn monorepo",
+  "author": "huitoutunao",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "@learn-monorepo/ui": "workspace:^"
+  },
+  "devDependencies": {}
+}

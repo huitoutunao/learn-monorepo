@@ -1,0 +1,25 @@
+{
+  "name": "@learn-monorepo/button",
+  "version": "0.0.0",
+  "description": "learn monorepo",
+  "author": "huitoutunao",
+  "private": true,
+  "main": "./dist/learn-monorepo-button.mjs",
+  "module": "./dist/learn-monorepo-button.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/learn-monorepo-button.umd.js",
+      "module": "./dist/learn-monorepo-button.mjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@learn-monorepo/shared": "workspace:^"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  }
+}
