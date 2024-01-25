@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: './src/index.ts',
       name: 'learnMonorepoUi',
-      fileName: 'learn-monorepo-ui'
+      fileName: 'learn-monorepo-ui',
     },
     minify: false,
   },

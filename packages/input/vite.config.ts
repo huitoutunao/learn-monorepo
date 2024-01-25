@@ -7,13 +7,13 @@ export default defineConfig({
     rollupOptions: {
       external: [
         /@learn-monorepo.*/,
-        'vue'
+        'vue',
       ],
     },
     lib: {
       entry: './src/index.ts',
       name: 'learnMonorepoInput',
-      fileName: 'learn-monorepo-input'
+      fileName: 'learn-monorepo-input',
     },
     minify: false,
   },

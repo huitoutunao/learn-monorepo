@@ -16,12 +16,6 @@ const PKG_DTS_RELATIVE_DIR = 'dist'
 // 包的代码入口相对目录
 const PKG_ENTRY_RELATIVE_DIR = 'src'
 
-async function main() {
-  const pkgs = await match()
-  const tasks = pkgs.map(resolve)
-  await Promise.all(tasks)
-}
-
 // 寻找所有需要移动 dts 的包
 async function match() {
   const res = await readdir(PKGS_DTS_DIR, { withFileTypes: true })
@@ -48,6 +42,12 @@ async function resolve(pkgName: string) {
   } catch (e) {
     console.log(`[${pkgName}]: failed to move!`)
   }
+}
+
+async function main() {
+  const pkgs = await match()
+  const tasks = pkgs.map(resolve)
+  await Promise.all(tasks)
 }
 
 main().catch((e) => {

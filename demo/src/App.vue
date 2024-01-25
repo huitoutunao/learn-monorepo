@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {
   Button,
-  Input
+  Input,
 } from '@learn-monorepo/ui'
 </script>
 

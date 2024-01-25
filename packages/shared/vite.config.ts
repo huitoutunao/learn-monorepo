@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: './src/index.ts',
       name: 'learnMonorepoShared',
-      fileName: 'learn-monorepo-shared'
+      fileName: 'learn-monorepo-shared',
     },
     minify: false,
   },
