@@ -6,10 +6,12 @@
   "private": true,
   "main": "./dist/learn-monorepo-ui.mjs",
   "module": "./dist/learn-monorepo-ui.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/learn-monorepo-ui.umd.js",
-      "module": "./dist/learn-monorepo-ui.mjs"
+      "module": "./dist/learn-monorepo-ui.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
